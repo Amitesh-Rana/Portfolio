@@ -67,10 +67,6 @@ const letterVariants = {
   visible: { opacity: 1, y: 0 }
 };
 
-const descriptionVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-};
 
 // Define variants for each line animation
 const lineVariants = {
@@ -256,7 +252,7 @@ const lineVariants = {
               <Button variant="ghost" onClick={() => setShowContact(false)}>Close</Button>
             </div>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              I'm always open to new opportunities and collaborations. Feel free to reach out!
+              I&apos;m always open to new opportunities and collaborations. Feel free to reach out!
             </p>
             <form className="space-y-6">
               <Input placeholder="Your Name" />
