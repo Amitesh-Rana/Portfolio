@@ -117,26 +117,6 @@ export default function AmiteshRanaPortfolio() {
     ];
 
 
-  // Define variants for each line animation
-  const lineVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-  };
-
-  const styles = {
-    minHeight: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    position: "relative",
-    background: activeTab === 'home'
-      ? 'linear-gradient(to bottom, rgba(255, 255, 204, 0.8), rgba(255, 204, 204, 0.8))' // Light yellow to light red for home
-      : activeTab === 'project'
-        ? 'linear-gradient(to bottom, rgba(204, 255, 255, 0.8), rgba(204, 204, 255, 0.8))' // Light cyan to light purple for project
-        : activeTab === 'skills'
-          ? 'linear-gradient(to bottom, rgba(204, 255, 204, 0.8), rgba(255, 255, 204, 0.8))' // Light green to light yellow for skills
-          : 'transparent', // Default background when no active tab
-  };
-
 
 
   return (
@@ -324,7 +304,7 @@ export default function AmiteshRanaPortfolio() {
 
             <div className="space-y-6">
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-  View my resume below. If you'd like to download it, click the <span className="font-bold text-purple-900 dark:text-purple-600">"Download Resume"</span> button.
+  View my resume below. If you&apos;d like to download it, click the <span className="font-bold text-purple-900 dark:text-purple-600">&quot;Download Resume&quot;</span> button.
 </p>
 
 

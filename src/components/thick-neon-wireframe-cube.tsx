@@ -3,7 +3,6 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { EdgesGeometry,BoxGeometry, Color } from 'three';
 import * as THREE from "three"
 
-type MeshRef = React.MutableRefObject<THREE.Mesh | null>;
 
 function ThickNeonWireframeCube() {
   const meshRef = useRef<THREE.Mesh | null>(null);
