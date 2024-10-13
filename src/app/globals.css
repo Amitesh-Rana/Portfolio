@@ -77,6 +77,12 @@ body {
   }
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url('./../../public/home-bg.jpg');
+  background-size: cover;
+}
 
 .gradient-background {
   position: relative; /* Position the element */
@@ -97,7 +103,32 @@ body {
 
 .gradient-background {
   background: 
-    url('./../../public/pic3.jpg'); /* Your image path here */
+    url('./../../public/bg-1.jpg'); /* Your image path here */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
+}
+
+
+.gradient-background-project {
+  position: relative; /* Position the element */
+  z-index: 0; /* Ensure it sits behind content */
+}
+
+.gradient-background-project::before {
+  content: ""; /* Empty content for pseudo-element */
+  position: absolute; /* Position it absolutely */
+  top: 0; /* Fill the entire area */
+  left: 0; /* Fill the entire area */
+  right: 0; /* Fill the entire area */
+  bottom: 0; /* Fill the entire area */
+  background: rgba(255, 255, 255,0.05); /* White overlay with 20% opacity */
+  z-index: 1; /* Ensure overlay is above background but below content */
+  filter: blur(10px);
+}
+
+.gradient-background-project {
+  background: 
+    url('./../../public/home-bg.jpg'); /* Your image path here */
   background-size: cover; /* Ensure the image covers the entire area */
   background-position: center; /* Center the image */
 }
