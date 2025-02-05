@@ -27,6 +27,11 @@ const projects = [
     link: "https://github.com/Amitesh-Rana/Facial_recognition_using_dlib",
     image: "/face.jpg"
   },
+  { title: "International Debt Analysis and Insights Generation",
+    description: "Queried and analyzed international debt data from The World Bank using SQL, extracting key insights on global debt distribution, principal repayments, and financial indicators.",
+    link: "https://github.com/Amitesh-Rana/Facial_recognition_using_dlib",
+    image: "/pic2.jpg"
+  },
   {
     title: "SPEECH EMOTION RECOGNITION ",
     description: "Carried out the task of speech emotion recognition from the RAVDESS Dataset using Python.",
@@ -111,9 +116,7 @@ export default function AmiteshRanaPortfolio() {
 
     // Array of resumes located in the public directory
     const resumes = [
-      { name: 'SDE Resume', file: '/AR_SDE_resume (1).pdf' }, // Adjust the filenames based on your actual PDF files
-      { name: 'ML Resume', file: '/AR_Machine_learning_resume (1).pdf' },
-      { name: 'Core Chemical Resume', file: '/AR_core_resume.pdf' },
+      { name: 'Resume', file: '/Amitesh_Rana_Resume (1).pdf' }, // Adjust the filenames based on your actual PDF files
     ];
 
 
@@ -191,10 +194,12 @@ export default function AmiteshRanaPortfolio() {
                   {/* Text Animation */}
                   <div className="flex-1">
                     {[
-                      "I am a final-year BTech student at IIT Jodhpur,",
-                      "pursuing a major in Chemical Engineering with a Minor in Management.",
-                      "I have a deep passion for Data Structures & Algorithms,",
-                      "as well as Machine Learning and Deep Learning."
+                      // "I am a final-year BTech student at IIT Jodhpur,",
+                      // "a data-driven problem solver passionate about turning raw data into meaningful insights.",
+                      // "With expertise in data analysis, machine learning, and strategic decision-making,",
+                      // "I bridge the gap between numbers and actionable business outcomes. From uncovering trends to optimizing processes,",
+                      // "I thrive on making data work smarter."
+                      "I am a final-year BTech student at IIT Jodhpur, a data-driven problem solver passionate about turning raw data into meaningful insights. With expertise in data analysis, machine learning, and strategic decision-making, I bridge the gap between numbers and actionable business outcomes. From uncovering trends to optimizing processes, I thrive on making data work smarter."
                     ].map((line, index) => (
                       <motion.p
                         key={index}
